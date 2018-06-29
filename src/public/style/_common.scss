@@ -1,0 +1,205 @@
+@import 'reset';
+.flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.flex_between{
+  display: flex;
+  justify-content: space-between;
+}
+.flex_row_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.flex_row_between{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center
+}
+
+.btn{
+    cursor: pointer
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button ,
+input{
+    -webkit-appearance: none!important;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+
+//table
+.mu-table td,.tipsmodal .mu-dialog-title,.tipsmodal .mu-dialog-body {
+  position: relative;
+  border-bottom: none;
+  &::after{
+    display: block;
+    position: absolute;
+    content:'';
+    height: .02rem;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: url("../assets/xiazhu/td_bd.png") no-repeat center/cover;
+  }
+}
+.mu-table-header-wrapper {
+  position: relative;
+  border-bottom: none;
+  &::after{
+    display: block;
+    position: absolute;
+    content:'';
+    height: .02rem;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: url("../assets/xiazhu/th_bd.png") no-repeat center/cover;
+  }
+}
+.guess .mu-table-body-wrapper {
+  padding: 0 0.21rem;
+}
+.awardinfo .mu-table-body-wrapper ,.awardinfo .mu-table-header-wrapper{
+  padding: 0 0.11rem;
+}
+.awardinfo .mu-table-header-wrapper{
+  background: #0076FF;
+}
+
+//table
+
+// 倒计时ziti
+@font-face{
+  font-family: 'countdown';
+  src : font-url('/style/OSP-DIN_0.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+// modal
+
+.mu-dialog.mu-scale{
+    max-width: unset;
+}
+
+
+.tipsmodal .mu-dialog {
+    width: 6.51rem;
+    height: 4.77rem;
+    background: url("../assets/xiazhu/modalbg.png") no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+  }
+  
+  .tipsmodalfind  .mu-dialog {
+    width: 5.21rem;
+    height: 3.47rem;     
+  }
+
+  .wardmodal .mu-dialog {
+    width: 6.23rem;
+    height: 3.97rem;
+    background: url("../assets/search_wallets/zhongjiang.png") no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+  }
+
+  .wardmodal .ward{
+    width: 6.23rem;
+    height: 3.97rem;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top:0;
+  }
+  
+  .tipsmodal .mu-dialog-title {
+    color: #fff;
+    font-size: 0.32rem;
+    font-family: HiraginoSansGB-W6 !important;
+    padding: 0;
+    height: 1.22rem;
+    line-height: 1;
+    justify-content: center;
+    width: 100%;
+  }
+
+  // .tipsmodal .mu-dialog-body{
+  //   border-bottom: 0.01rem solid #373737;
+  // }
+
+  .tipsmodal.tipsmodalfind .mu-dialog-body{
+    border-bottom: none;
+    padding: 0
+  }
+  
+  .tipsmodal .surebtn.mu-primary-color {
+    background-color: unset;
+    background: url("../assets/xiazhu/btnok.png") no-repeat center / cover;
+    width: 2.82rem;
+    height: 0.83rem;
+    font-size: 0.3rem;
+    font-family: HiraginoSansGB-W6;
+    position: absolute;
+    bottom: -1.12rem;//0.25rem;
+    left: 50%;
+    transform: translateX(-1.41rem);
+  }
+
+  .tipsmodal.tipsmodalfind .surebtn.mu-primary-color {
+    background-color: unset;
+    background: url("../assets/xiazhu/btnok.png") no-repeat center / cover;
+    width: 2.32rem;
+    height: 0.68rem;
+    font-size: 0.3rem;
+    font-family: HiraginoSansGB-W6;
+    position: absolute;
+    bottom: -.84rem;//0.25rem;
+    left: 50%;
+    transform: translateX(-1.41rem);
+  }
+  
+  .tipsmodal .closebtn.mu-primary-text-color.mu-flat-button {
+    min-width: unset;
+    position: absolute;
+    right: -0.1rem;
+    top: -1.68rem;
+    width: 0.38rem;
+    height: 0.38rem;
+    border-radius: 50%;
+    border: 0.02rem solid #fff;
+    color: #fff;
+    text-align: center;
+    font-size: 0.3rem;
+    .mu-button-wrapper {
+      padding: 0;
+    }
+  }
+// modal
+
+// tips
+
+.mu-snackbar {
+    width: 2rem !important;
+    justify-content: center !important;
+    font-size: 0.24rem;
+    margin: 1.52rem auto 0;
+    min-width: unset !important;
+  }
+  .mu-snackbar.mu-warning-color{
+    width: 3rem !important;
+  }
+
+  // input
+  input,textarea{
+    outline: none;
+  }
